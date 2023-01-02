@@ -1,0 +1,143 @@
+.outer-main {
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 50px;
+  //   margin-bottom:-100px;
+  //   margin-bottom: 100px;
+  //   justify-items: center;
+    justify-content: center;
+    background-color: grey;
+    z-index:1;
+  }
+  .inner-one {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 19vw;
+    height: 48vh;
+    border: 1px solid white;
+  //   border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+    justify-content: space-around;
+    z-index: 2;
+    margin-top: 30px;
+  }
+  .shopimage {
+    width: 210px;
+    height: 210px;
+    // border:1px solid red;
+    // border-radius: 10px;
+    margin: auto;
+  }
+  h3 {
+    text-align: center;
+    margin: auto;
+  }
+  .text-fileds {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 250px;
+    justify-content: space-between;
+    gap:0.5rem;
+    margin-top: -10px;
+    margin-left: 60px;
+  //   margin-right: 220px;
+  //   border: 1px solid green;
+  }
+  .mail,
+  .pswd,.name, .number {
+    height: 30px;
+    width: 243px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  .btnlogin {
+    background-color: #a03037;
+    color: white;
+    border: white;
+    height: 35px;
+  }
+  .login {
+    width: 100px;
+    height: 50px;
+    font-size: 23px;
+    margin: auto;
+    font-weight: lighter;
+  color:grey;
+    background-color: white;
+    border: none;
+  }
+  .signup {
+    width: 100px;
+    height: 50px;
+    font-size: 23px;
+    margin: auto;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    text-decoration-line:underline ;
+    text-decoration-color: #A03037;
+    
+    
+  }
+  .inner-two {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 21vw;
+    height: 55vh;
+  //   margin: auto;
+    justify-content: space-around;
+    border: 1px solid red;
+    
+  }
+  #fpwd {
+    text-align: right;
+    font-size: 15px;
+  }
+  .or {
+    text-align: center;
+  }
+  .bottom {
+    display: flex;
+    // justify-content: space-between;
+    width: 250px;
+    gap: 1rem;
+    height: 35px;
+  //   border:1px solid red;
+  }
+  .FB {
+    background-color: #4266b2;
+    width: 132px;
+    height: 35px;
+    color: white;
+    border: none;
+  }
+  .google {
+    width: 132px;
+  }
+  .inner-part {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .divbar{
+      display: flex;
+      flex-direction: row;
+      border: 1px solid blueviolet;
+      height:48vh;
+      width:40vw;
+      margin: auto;
+  }
+//  .signup{
+//     font-weight: lighter;
+//  }
