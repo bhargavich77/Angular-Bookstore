@@ -23,37 +23,42 @@
             </div> -->
             <div class="buttonimg">
                 
-                    <button class="bag" mat-raised-button>ADD TO BAG</button>
+                    <button *ngIf="view" (click)="onClick()" class="bag" mat-raised-button (click)="addcart()" >ADD TO BAG</button>
                
-                <!-- <div class="quantity" >
+                <div class="quantity" *ngIf="!view" >
                     <button class="subtract" >-</button>
                     <span class="numder">()</span>
                     <button class="add" >+</button>
-                </div> -->
-                <button class="wish" mat-raised-button> ❤ WISHLIST</button>
+                </div>
+                <button class="wish" mat-raised-button (click)="wish()"> ❤ WISHLIST</button>
             </div>
         </div>
-        <div class='detailsView'>
-            <p class='bookNameView'>bookName</p>
-            <p class='authorView'>by author</p>
+        <div class='detailsView' >
+            <p class='bookNameView'>{{Book.bookName}}</p>
+            <p class='authorView'>{{Book.author}}</p>
             <div>
                 <button class='ratingBtnView'>4.5*</button>
-                <span>(quantity)</span>
+                <span>({{Book.quantity}})</span>
             </div>
             <div class='priceDivView'>
-                <p class='priceTagView'>discount price</p>
-                <span class='OriginalPriceView'>(Rs.price)</span>
+                <p class='priceTagView'>{{Book.discountPrice}}</p>
+                <span class='OriginalPriceView'>(Rs.{{Book.price}})</span>
             </div>
             <hr />
             <div>
-                <p>Description</p>
+                <ul>
+                    <li>
+                        Book Description
+                    </li>
+                </ul>
+                {{Book.description}}
             </div>
             <hr  />
 
             <p >Customer Feedback</p>
             <div class='overallRating'>
                 <p>Overall Rating</p>
-                <div class="" >
+                <div class="star" >
                     
                 </div>
                 <textarea class='textAreaInput' placeholder='write your Feedback'></textarea>

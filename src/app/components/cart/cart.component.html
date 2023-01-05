@@ -3,7 +3,7 @@
 </div>
 <div class="maincont">
     <div  class="main">
-        <button class="home">Home /</button>
+        <button class="home" routerLink="/Dashboard">Home /</button>
     </div>
     <div class="bookbutton">
         <button class="book">My cart</button>
@@ -33,9 +33,9 @@
                 </div>
             </div>
             <div class="quantity">
-                <button class="subtract">-</button>
+                <button class="subtract" (click)="decrease(Book)">-</button>
                 <span class="numder">quantity</span>
-                <button class="add"  >+</button>
+                <button class="add" (click)="increase(Book)">+</button>
                 <div class="btn">
                     <button mat-button  >
                         Remove

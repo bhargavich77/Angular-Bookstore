@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { BookService } from 'src/app/service/book/book.service';
-
+import { DataService } from "../../service/data.service";
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-getbook',
   templateUrl: './getbook.component.html',
@@ -9,8 +10,14 @@ import { BookService } from 'src/app/service/book/book.service';
 export class GetbookComponent implements OnInit{
   bookData:any;
   bookName:any;
-constructor(private data:BookService){}
-  ngOnInit(): void {
+  message:any; 
+  // subscription: Subscription;
+constructor(private data:BookService,private dataservice:DataService){}
+ 
+ngOnInit(): void {
+ this.dataservice.getbooks.subscribe((res:any) => {
+  console.log(res)
+ })
     this.getallbooks()
   }
   getallbooks(){
@@ -20,6 +27,9 @@ constructor(private data:BookService){}
       console.log(this.bookData)
     })
     
+  }
+  onclick(book:any){
+    this.dataservice.sendbookdetails(book)
   }
 
 }

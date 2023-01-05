@@ -13,4 +13,10 @@ export class HttpService {
   getservice(url:any,token:boolean=false,options:any){
     return this.httpclient.get(url,token&&options)
   }
+  putservice(url:any,data:any,token:boolean=true,options:any){
+    return this.httpclient.put(url,data,token&&options)
+  }
+  deleteservice( url:any,token:boolean=true,options:any){
+    return this.httpclient.delete(url,token&&options)
+  }
 }

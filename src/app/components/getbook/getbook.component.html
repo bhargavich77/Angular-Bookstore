@@ -1,7 +1,7 @@
 <div class="outer">
 <div class='booksCard' routerLink="/open-book" *ngFor="let books of bookData ">
-    <div class='booksImg'>
-      <img src="../../../assets/name.png" alt='' class='bookImage' />  
+    <div class='booksImg' (click)="onclick(books)">
+      <img src="../../../assets/name.png"  alt='' class='bookImage' />  
     </div>   
     <div class='booksDetails'>
       <p class='bookName'>{{books.bookName}}</p>

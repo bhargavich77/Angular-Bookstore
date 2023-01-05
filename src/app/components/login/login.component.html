@@ -23,16 +23,18 @@
                 </mat-form-field> -->
                 <input class="pswd" type="password" placeholder="password" formControlName="password"/>
                 <label id="fpwd">Forgot Password?</label>
-                <button class="btnlogin" routerLink="/Dashboard">
+                <button (click)="onSubmit()" class="btnlogin" routerLink="/Dashboard">
                     Login
                 </button>
+               
+            
                 <span class="or">----------------- OR -----------------</span>
                 <div class="bottom">
                 <button class="FB">Facebook</button>
                 <button class="google">Google</button>
             </div>
             </div>
-            </form>
+        </form>
     </div>
 </div>
 </div>

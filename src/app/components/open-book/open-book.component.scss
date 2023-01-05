@@ -29,7 +29,7 @@ span{
 }
 
 .viewRow{
-    border: 1px solid red; 
+    // border: 1px solid red; 
     width: 98%;
     height: 100%;
     display: flex;
@@ -149,7 +149,9 @@ span{
 
 .bookNameView{
     font-size: 16px;
+    
     font-weight: 700;
+   
 }
 
 .authorView{
@@ -175,7 +177,13 @@ span{
     border: none;
     
 }
-
+.quantity {
+    height: 35px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid red;
+}
 .btnSubmitFeed{
     margin-right: 6px;
     margin-left: auto;

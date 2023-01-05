@@ -10,6 +10,7 @@ import { UserService } from 'src/app/service/user/user.service';
 export class LoginComponent implements OnInit {
   registerForm!:FormGroup;
   submitted=false;
+  token:any;
   constructor(private formBuilder:FormBuilder,private user:UserService){}
   ngOnInit(): void {
     this.registerForm=this.formBuilder.group({
@@ -29,8 +30,24 @@ export class LoginComponent implements OnInit {
       }
       this.user.login(signindata).subscribe((res:any)=>{
         console.log(res);
-        localStorage.setItem('token',res.id)
+        localStorage.setItem('token',res.result.accessToken)
+        console.log(res.result.accessToken)
       })
     }
+  //   this.submitted = true;
+
+  //   if (this.registerForm.valid) {
+  //     //if(radio for admin else user)
+  //     console.log("admin login successfully");
+  //     let payload = {
+  //       email: this.registerForm.value.email,
+  //       password: this.registerForm.value.password,
+  //     }
+  //     this.user.login(payload).subscribe((response: any) => {
+  //       console.log(response);
+  //       localStorage.setItem('token',response.result.accessToken)
+  //     }
+  //     )
+  // }
   }
 }
