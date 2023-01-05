@@ -1,0 +1,19 @@
+<div class="outer">
+<div class='booksCard' routerLink="/open-book" *ngFor="let books of bookData ">
+    <div class='booksImg'>
+      <img src="../../../assets/name.png" alt='' class='bookImage' />  
+    </div>   
+    <div class='booksDetails'>
+      <p class='bookName'>{{books.bookName}}</p>
+      <p>{{books.author}}</p>
+      <div>
+        <button class='ratingBtn'>4.5*</button>
+        <span>({{books.quantity}} )</span>
+      </div>
+      <div class='priceDiv'>
+        <p class='priceTag'>Rs.{{books.discountPrice}}</p>
+        <span class='OriginalPrice'>RS.{{books.price}}</span>
+      </div>
+    </div>
+  </div>
+</div>

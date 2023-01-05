@@ -1,0 +1,75 @@
+<div class="outer">
+<div class="header">
+    <app-header></app-header>
+</div>
+
+<div class='quickViewDiv'>
+    <div id='idBookTextView'>
+        <span routerLink="/Dashboard">Home/ </span>
+        <span class="book">Book(00)</span>
+    </div>
+    <div class='viewRow'>
+        <div class='imgViewC'>
+            <img src="../../../assets/small1.png" alt='' class='bookImageView' />
+            <img src="../../../assets/small2.png" alt='' class='bookImageView' />
+        </div>
+        <div class='bookImgDiv'>
+            <div class='largeImgDiv'>
+                <img src="../../../assets/name.png" alt='' class='largeBookImage' />
+            </div>
+            <!-- <div class='btnView'>
+                        <button id='bagBtn'>ADD TO BAG</button> 
+                     <button id='wishlistBtn' >❤ WISHLIST</button> 
+            </div> -->
+            <div class="buttonimg">
+                
+                    <button class="bag" mat-raised-button>ADD TO BAG</button>
+               
+                <!-- <div class="quantity" >
+                    <button class="subtract" >-</button>
+                    <span class="numder">()</span>
+                    <button class="add" >+</button>
+                </div> -->
+                <button class="wish" mat-raised-button> ❤ WISHLIST</button>
+            </div>
+        </div>
+        <div class='detailsView'>
+            <p class='bookNameView'>bookName</p>
+            <p class='authorView'>by author</p>
+            <div>
+                <button class='ratingBtnView'>4.5*</button>
+                <span>(quantity)</span>
+            </div>
+            <div class='priceDivView'>
+                <p class='priceTagView'>discount price</p>
+                <span class='OriginalPriceView'>(Rs.price)</span>
+            </div>
+            <hr />
+            <div>
+                <p>Description</p>
+            </div>
+            <hr  />
+
+            <p >Customer Feedback</p>
+            <div class='overallRating'>
+                <p>Overall Rating</p>
+                <div class="" >
+                    
+                </div>
+                <textarea class='textAreaInput' placeholder='write your Feedback'></textarea>
+                <button class='btnSubmitFeed'>Submit</button>
+            </div>
+            <!-- <div class='feedBack'>
+                <div class='feedbackName'>
+                    <div >name</div>
+                    <p>name</p>
+                </div>
+                <div >
+                    
+                </div>
+                <p>feedBack</p>
+            </div> -->
+        </div>
+    </div>
+</div>
+</div>

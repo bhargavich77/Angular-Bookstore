@@ -1,0 +1,108 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding: 6% 200px;
+    margin-bottom: -104px;
+    margin-left: -45px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -39px;
+}
+
+.cart_container {
+    border-color: black;
+    border: groove;
+    height: auto;
+    width: 960px;
+    margin-left: 150px;
+    margin-right: 266px;
+    margin-top: 90px;
+}
+
+.image {
+    width: 191px;
+    height: 204px;
+    margin-left: 30px;
+    margin-top: -9px;
+    margin-right: -289px;
+    border: 0px solid red;
+}
+
+img {
+    width: 100px;
+    height: 125px;
+    margin-left: 14px;
+    margin-top: 46px;
+}
+
+.book-description {
+    cursor: pointer;
+    padding-left: 20px;
+    margin-top: 36px;
+    height: 200px;
+    width: 300px;
+    border: 0px solid red;
+
+    h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 2px;
+    }
+
+    p {
+        margin-bottom: 2px;
+    }
+
+    .price-container {
+        .dicounted-price {
+            margin-top: 10px;
+            font-size: large;
+        }
+
+        .actual-price {
+            margin-top: 10px;
+            margin-left: 5px;
+            text-decoration: line-through;
+            color: gray;
+        }
+    }
+}
+
+.crt {
+    display: flex;
+    flex-direction: row;
+    border: 0px solid red;
+    justify-content: space-between;
+}
+
+.delete {
+    width: 29px;
+    height: 33px;
+    margin-right: 32px;
+    margin-top: 60px;
+}
+
+.j1 {
+    display: flex;
+    height: 40px;
+    width: 95%;
+    border: 0px solid red;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: gainsboro;
+}
+.deletebutton{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 100px;
+}

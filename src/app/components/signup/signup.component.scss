@@ -1,15 +1,10 @@
 .outer-main {
     display: flex;
     flex-direction: row;
-    width: 65vw;
-    height: 80vh;
-    margin: auto;
-    margin-top: 50px;
-  //   margin-bottom:-100px;
-  //   margin-bottom: 100px;
-  //   justify-items: center;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
-    background-color: grey;
+    background-color: lightgray;
     z-index:1;
   }
   .inner-one {
@@ -40,24 +35,44 @@
   .text-fileds {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    // justify-items: center;
     width: 250px;
+    // height: 20px;
     justify-content: space-between;
     gap:0.5rem;
-    margin-top: -10px;
-    margin-left: 60px;
-  //   margin-right: 220px;
+    // margin-top: -10px;
+    // margin-left: 60px;
+    // margin-right: -10px;
+    // margin: auto;
   //   border: 1px solid green;
   }
-  .mail,
-  .pswd,.name, .number {
+  .mail,.pswd,.name,.number {
     height: 30px;
-    width: 243px;
+    width: 240px;
+    border:1px solid grey;
   }
+  // .pswd {
+  //   height: 30px;
+  //   width: 243px;
+  //   // border:1px solid grey;
+  // }
+  // .name {
+  //    height: 30px;
+  //   width: 243px;
+  //   // border:10px solid red;
+  // }
+  // .number {
+  //   height: 30px;
+  //   width: 243px;
+  //   border:1px solid grey;
+  // }
   .top {
     display: flex;
     justify-content: space-between;
     z-index: 3;
+    gap:2.4rem;
+    width:85%;
+    // border: 1px solid blue;
   }
   .btnlogin {
     background-color: #a03037;
@@ -94,8 +109,9 @@
     background-color: white;
     width: 21vw;
     height: 55vh;
-  //   margin: auto;
-    justify-content: space-around;
+    margin: auto;
+    justify-content: space-between;
+    justify-items: center;
     border: 1px solid red;
     
   }
@@ -128,16 +144,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
   .divbar{
       display: flex;
       flex-direction: row;
-      border: 1px solid blueviolet;
+      // border: 1px solid blueviolet;
       height:48vh;
       width:40vw;
       margin: auto;
   }
-//  .signup{
-//     font-weight: lighter;
-//  }

@@ -1,0 +1,84 @@
+.headerDiv {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a03037;
+}
+
+.headerMainDiv {
+  /* border: 1px solid red; */
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoDiv {
+  /* border: 1px solid red; */
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookstoreText {
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  color: white;
+}
+
+.searchDiv {
+  width: 80%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+.textbox-search {
+  width: 100%;
+  height: 100%;
+}
+
+
+.right-icons{
+  display: flex;
+  flex-direction: row;
+  // border:1px solid white;
+  // width:100px;
+  gap:8rem;
+  height:fit-content;
+  margin-right: 60px;
+  // margin-left: 500px;
+  // margin: auto;
+  margin-top: -13px;
+  
+}
+.person,.cart{
+  display: flex;
+  flex-direction: column;
+  width:30px;
+  // border:1px solid red;
+  height:30px;
+  justify-content: space-between;
+  gap:1rem;
+}
+.person-img{
+  width:30px;
+  height: 30px;
+  color: white;
+}
+p{
+  margin-top: -10px;
+  color: white;
+}

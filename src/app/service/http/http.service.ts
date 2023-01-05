@@ -7,6 +7,7 @@ export class HttpService {
 
   constructor(private httpclient:HttpClient) { }
   postservice(url:any, data:any, token:boolean=false, options:any){
+    // return this.httpclient.post(url,data,token&&options)
     return this.httpclient.post(url,data,token&&options)
   }
   getservice(url:any,token:boolean=false,options:any){

@@ -7,26 +7,68 @@
     <div class="inner-two">
       <div class="inner-part">
         <div class="top">
-          <button class="login">LOGIN</button>
+          <button class="login" routerLink="/signin">LOGIN</button>
           <button class="signup">SIGNUP</button>
         </div>
-<form>
-        <div class="text-fileds">
-          <label>Full Name</label>
-          <input class="name" type="text" placeholder="Fullname" />
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="text-fileds">
+            <label>Full Name</label>
+            <!-- <mat-form-field appearance="outline">
+              <input
+               
+               
+                class="name"
+                type="text"
+                
+                formControlName="fullName"
+              />
+              <mat-error>enter full name</mat-error>
+            </mat-form-field> -->
+            <input class="name" type="text" placeholder="Fullname" formControlName="fullName" />
 
-          <label>Email id</label>
-          <input class="mail" type="text" placeholder="email" />
+            <label>Email id</label>
+            <!-- <mat-form-field appearance="outline">
+              <input
+                
+               
+                class="mail"
+                type="text"
+                placeholder="Email or UserName "
+                formControlName="email"
+              />
+              <mat-error>enter mail</mat-error>
+            </mat-form-field> -->
+            <input class="mail" type="text" placeholder="email" formControlName="email" />
 
-          <label>Password</label>
-          <input class="pswd" type="password" placeholder="password" />
-
-          <label>Mobile Number</label>
-          <input class="number" type="phonenumber" placeholder="Phn" />
-          <br />
-          <button class="btnlogin">Signup</button>
-        </div>
-      </form>
+            <label>Password</label>
+            <input class="pswd" type="password" placeholder="password" formControlName="password"/>
+            <!-- <mat-form-field appearance="outline">
+              <input
+               
+               
+                class="pswd"
+                type="password"
+                placeholder="Password"
+                formControlName="password"
+              />
+              <mat-error>enter password</mat-error>
+            </mat-form-field> -->
+            <label>Mobile Number</label>
+            <!-- <mat-form-field appearance="outline">
+              <input
+             
+                type="tel"
+                class="number"
+                placeholder="Phn"
+                formControlName="phone"
+              />
+              <mat-error>enter phone number</mat-error>
+            </mat-form-field> -->
+            <input class="number" type="tel" placeholder="Phn" formControlName="phone"/>
+            <!-- <br /> -->
+            <button class="btnlogin">Signup</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
