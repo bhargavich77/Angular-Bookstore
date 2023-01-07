@@ -14,6 +14,6 @@ export class BookService {
         'Content-Type':'application/json',
       })
     }
-    return this.httpservice.getservice('https://bookstore.incubation.bridgelabz.com/bookstore_user/get/book',false,header)
+    return this.httpservice.getbook('https://bookstore.incubation.bridgelabz.com/bookstore_user/get/book',false,header)
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 import { UserService } from 'src/app/service/user/user.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   registerForm!:FormGroup;
   submitted=false;
   token:any;
-  constructor(private formBuilder:FormBuilder,private user:UserService){}
+  constructor(private formBuilder:FormBuilder,private user:UserService,private router:Router){}
   ngOnInit(): void {
     this.registerForm=this.formBuilder.group({
       email:['',[Validators.required,Validators.email]],
@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
         console.log(res);
         localStorage.setItem('token',res.result.accessToken)
         console.log(res.result.accessToken)
+        this.router.navigateByUrl('/home/dashboard')
       })
     }
   //   this.submitted = true;

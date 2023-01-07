@@ -14,10 +14,10 @@ token:any
     let header = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'x-access-token': this.token
+        'x-access-token': this.token,
       })
     }
-    return this.httpservice.postservice("/bookstore_user/add_wish_list/"+Book.product_id, Book, true, header)
+    return this.httpservice.postservice('https://bookstore.incubation.bridgelabz.com/bookstore_user/add_wish_list/'+Book.product_id, Book, true, header)
   }
   getwishlist(){
 

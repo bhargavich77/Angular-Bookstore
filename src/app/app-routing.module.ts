@@ -10,18 +10,20 @@ import { OpenBookComponent } from './components/open-book/open-book.component';
 import { OrderComponent } from './components/order/order.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:'signin', component:LoginComponent},
-  {path:'signup',component:SignupComponent},
-  {path:'header',component:HeaderComponent},
-  {path:'footer',component:FooterComponent},
-  {path:'Dashboard', component:DashboardComponent},
-  {path:'getbook',component:GetbookComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  {path:'',redirectTo:"/login",pathMatch:'full'},
+  { path: 'home', component:HomeComponent ,
+children:[
+  {path:'dashboard',component:DashboardComponent},
+  {path: 'Openbook', component: OpenBookComponent},
   {path:'cart',component:CartComponent},
   {path:'order',component:OrderComponent},
-  {path:'open-book',component:OpenBookComponent},
-  {path:'wishlist',component:WishlistComponent},
+  {path:'wishlist',component:WishlistComponent}
+]},
 ];
 
 @NgModule({
