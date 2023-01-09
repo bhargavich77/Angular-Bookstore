@@ -10,25 +10,25 @@
     </div>
     <div class="cart_container">
         <div>
-        <h3 class="j1">My Wishlist(number)</h3>
+        <h3 class="j1">My Wishlist({{wishlist.length}})</h3>
     </div>
-        <div class="crt" >
+        <div class="crt" *ngFor="let wish of wishlist" >
             <div class="image">
                 <img src="../../../assets/name.png" alt="">
             </div>
             <div class="book-description">
-                <h2>bookname</h2>
-                <p>by author </p>
+                <h2>{{wish.product_id.bookName}}</h2>
+                <p>by {{wish.product_id.autor}} </p>
                 <div class="price-container" fxLayout="row">
                     <div class="dicounted-price">
-                        <b>Rs. price disc </b>
+                        <p>Rs. {{wish.product_id.discountPrice}} </p>
                     </div>
                     <div class="actual-price">
-                        Rs.  price
+                        Rs. {{wish.product_id.price}}
                     </div>
                 </div>
             </div>
-            <div class="delete" >
+            <div class="delete" (click)="deleteItem(wish.product_id._id)">
                 <img class="deletebutton" src="../../../assets/DeleteForever.svg" alt="">
               
             </div>

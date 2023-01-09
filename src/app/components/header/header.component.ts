@@ -20,13 +20,13 @@ export class HeaderComponent implements OnInit {
 tocart(){
   this.router.navigateByUrl('/home/cart')
 }
-towishlist(){
-  this.router.navigateByUrl('/home/wishlist')
-}
+// towishlist(){
+//   this.router.navigateByUrl('/home/wishlist')
+// }
 
-recivemessage(event: any) {
-  this.cart=event;
-}
+// receivemessage(event: any) {
+//   this.cart=event;
+// }
 searchBook(event:any){
   this.data.sendbookdetails(event.target.value)
 }
