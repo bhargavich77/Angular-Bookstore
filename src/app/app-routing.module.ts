@@ -11,14 +11,17 @@ import { OrderComponent } from './components/order/order.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { HomeComponent } from './home/home.component';
-
+import {AuthenticationGuard} from './authentication.guard';
 const routes: Routes = [
+  
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   {path:'',redirectTo:"/login",pathMatch:'full'},
-  { path: 'home', component:HomeComponent ,
+
+  {path:'Dashboard',component:DashboardComponent  ,canActivate:[AuthenticationGuard],
+  
 children:[
-  {path:'dashboard',component:DashboardComponent},
+  
   {path: 'Openbook', component: OpenBookComponent},
   {path:'cart',component:CartComponent},
   {path:'order',component:OrderComponent},

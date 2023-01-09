@@ -89,6 +89,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FilterPipe } from './filter.pipe';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HomeComponent } from './home/home.component';
+import {AuthguardService} from './authguard.service';
+
 
 @NgModule({
   declarations: [
@@ -126,9 +128,10 @@ import { HomeComponent } from './home/home.component';
     NgxPaginationModule,
     MatBadgeModule,
     MatSnackBarModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+
   ],
-  providers: [],
+  providers: [AuthguardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -33,7 +33,7 @@ ngOnInit(): void {
   }
   onclick(book:any){
     this.dataservice.sendbookdetails(book)
-    this.router.navigateByUrl('/home/Openbook')
+    this.router.navigateByUrl('/Openbook')
   }
 
 }

@@ -131,7 +131,7 @@ export class CartComponent implements OnInit {
     })
   }
   todashboard() {
-    this.router.navigateByUrl('/home/dashboard')
+    this.router.navigateByUrl('/dashboard')
   }
   increment() {
     this.count = this.count + 1;
@@ -170,7 +170,7 @@ export class CartComponent implements OnInit {
     console.log(Book)
     this.user.removeItem(Book).subscribe((res: any) => {
       console.log(res)
-      // location.reload();
+      location.reload();
     })
   }
   increasebook(Book: any) {

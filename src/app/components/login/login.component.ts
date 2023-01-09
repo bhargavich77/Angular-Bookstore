@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   token:any;
   constructor(private formBuilder:FormBuilder,private user:UserService,private router:Router){}
   ngOnInit(): void {
+    
     this.registerForm=this.formBuilder.group({
       email:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(6)]],
@@ -32,7 +33,7 @@ export class LoginComponent implements OnInit {
         console.log(res);
         localStorage.setItem('token',res.result.accessToken)
         console.log(res.result.accessToken)
-        this.router.navigateByUrl('/home/dashboard')
+        this.router.navigateByUrl('/Dashboard')
       })
     }
   //   this.submitted = true;
