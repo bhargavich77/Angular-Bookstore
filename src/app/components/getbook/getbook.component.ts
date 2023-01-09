@@ -12,12 +12,14 @@ export class GetbookComponent implements OnInit{
   bookData:any;
   bookName:any;
   message:any; 
+  Search='';
   // subscription: Subscription;
 constructor(private data:BookService,private dataservice:DataService,private router:Router){}
  
 ngOnInit(): void {
  this.dataservice.getbooks.subscribe((res:any) => {
   console.log(res)
+  this.Search=res;
  })
     this.getallbooks()
   }

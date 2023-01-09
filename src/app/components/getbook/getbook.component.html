@@ -1,5 +1,5 @@
 <div class="outer">
-<div class='booksCard'  *ngFor="let books of bookData ">
+<div class='booksCard'  *ngFor="let books of bookData | filter: Search ">
     <div class='booksImg' (click)="onclick(books)">
       <img src="../../../assets/name.png"  alt='' class='bookImage' />  
     </div>   
@@ -16,4 +16,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
+
+
+
+
+ 
