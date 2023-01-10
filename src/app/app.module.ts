@@ -90,7 +90,7 @@ import { FilterPipe } from './filter.pipe';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HomeComponent } from './home/home.component';
 import {AuthguardService} from './authguard.service';
-
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -129,6 +129,7 @@ import {AuthguardService} from './authguard.service';
     MatBadgeModule,
     MatSnackBarModule,
     Ng2SearchPipeModule,
+    MatMenuModule,
 
   ],
   providers: [AuthguardService],

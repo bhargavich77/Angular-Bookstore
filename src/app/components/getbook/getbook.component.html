@@ -1,5 +1,5 @@
 <div class="outer">
-<div class='booksCard'  *ngFor="let books of bookData | filter: Search ">
+<div class='booksCard'  *ngFor="let books of bookData | filter: Search | paginate: {itemsPerPage:6, currentPage:page,totalItems:totalLength} ">
     <div class='booksImg' (click)="onclick(books)">
       <img src="../../../assets/name.png"  alt='' class='bookImage' />  
     </div>   
@@ -17,7 +17,9 @@
     </div>
   </div>
 </div> 
-
+<div class="pages">
+  <pagination-controls (pageChange)="page=$event" class="page"></pagination-controls>
+</div>
 
 
 

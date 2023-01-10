@@ -13,6 +13,8 @@ export class GetbookComponent implements OnInit{
   bookName:any;
   message:any; 
   Search='';
+  page:number=1;
+  totalLength:any;
   // subscription: Subscription;
 constructor(private data:BookService,private dataservice:DataService,private router:Router){}
  
@@ -33,7 +35,7 @@ ngOnInit(): void {
   }
   onclick(book:any){
     this.dataservice.sendbookdetails(book)
-    this.router.navigateByUrl('/Openbook')
+    this.router.navigateByUrl('/home/Openbook')
   }
 
 }

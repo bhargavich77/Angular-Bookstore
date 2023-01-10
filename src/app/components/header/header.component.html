@@ -8,7 +8,7 @@
             alt=""
             className="bookLogo"
           />
-          <span>BOOKSTORE</span>
+          <span routerLink="/home/dashboard">BOOKSTORE</span>
         </div>
         <div class="searchDiv">
             <!-- <img src="../../../assets/Searchimg.svg"> -->
@@ -17,8 +17,15 @@
       </div>
      <div class="right-icons">
       <div class="person">
-        <img  class="person-img"src="../../../assets/Person.svg"/>
+        <img  class="person-img" [matMenuTriggerFor]="menu"src="../../../assets/Person.svg"/>
         <p>Profile</p>
+        <!-- <button mat-button [matMenuTriggerFor]="menu">profile</button> -->
+<mat-menu #menu="matMenu">
+  <!-- <button mat-menu-item>Profile</button> -->
+  <button mat-menu-item routerLink="/home/order">My Orders</button>
+  <button mat-menu-item routerLink="/home/wishlist">My Wishlist</button>
+</mat-menu>
+
       </div>
       <div class="cart">
         <img src="../../../assets/supermarket.svg" (click)="tocart()"/>

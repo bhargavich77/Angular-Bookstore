@@ -82,7 +82,7 @@ export class CartComponent implements OnInit {
   show = false;
   address = true;
   placeorder = true;
-  summary = false;
+  summary = true;
   continue = true;
   item_qty:any;
   createForm !: FormGroup;

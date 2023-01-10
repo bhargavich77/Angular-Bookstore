@@ -268,8 +268,8 @@
     </div>
 </form>
 
-<div class="summary">
-    <div class="head1" *ngIf="summary">
+<div class="summary" >
+    <div class="head1" *ngIf="summary" >
         <span style="font-size: medium;">Order Summary</span>
     </div>
     <div *ngIf="!summary" class="work">
@@ -297,6 +297,6 @@
             </div>
         </div>
         <div class="xyz">
-        <a class="order" (click)="placeOrder()" routerLink="/home/order">Checkout</a></div>
+        <a class="order" (click)="placeOrder()" routerLink="/Dashboard/order">Checkout</a></div>
     </div>
 </div>
