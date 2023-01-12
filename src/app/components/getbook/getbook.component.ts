@@ -28,7 +28,7 @@ ngOnInit(): void {
   getallbooks(){
     this.data.getbooks().subscribe((res:any)=>{
       this.bookData=res.result;
-      // console.log(res)
+      console.log(res)
       console.log(this.bookData)
     })
     

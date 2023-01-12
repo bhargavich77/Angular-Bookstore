@@ -16,21 +16,21 @@
         <div class='bookImgDiv'>
             <div class='largeImgDiv'>
                 <img src="../../../assets/name.png" alt='' class='largeBookImage' />
-            </div> -->
-            <!-- <div class='btnView'>
+            </div> 
+            <div class='btnView'>
                         <button id='bagBtn'>ADD TO BAG</button> 
                      <button id='wishlistBtn' >❤ WISHLIST</button> 
-            </div> -->
-            <!-- <div class="buttonimg">
+            </div>
+            <div class="buttonimg">
                 
-                    <button mat-raised-button *ngIf="view"  class="bag"  (click)="addcart()"  >ADD TO BAG</button>
+                    <button mat-raised-button   class="bag"   >ADD TO BAG</button>
                
-                <div class="quantity" *ngIf="!view" >
+                <div class="quantity"  >
                     <button class="subtract" >-</button>
                     <span class="numder">()</span>
                     <button class="add" >+</button>
                 </div>
-                <button class="wish" mat-raised-button (click)="wish()"> ❤ WISHLIST</button>
+                <button class="wish" mat-raised-button > ❤ WISHLIST</button>
             </div>
         </div>
         <div class='detailsView' >
@@ -73,17 +73,18 @@
                     
                 </div>
                 <p>feedBack</p>
-            </div> -->
-        <!-- </div>
+            </div>
+         </div>
     </div>
 </div>
-</div> --> 
+</div>  -->
 
 
 
 <div>
     <app-header [cartitemslist]="badgeCounter"></app-header>
 </div>
+<!-- <div class="outer"></div> -->
 <div class="maincont">
     <div (click)="dasboard()" class="main">
         <button class="home">Home /</button>
@@ -92,16 +93,18 @@
         <button class="book">Book</button>
     </div>
 </div>
-<!-- imagepart -->
+
 <div class="imagepart">
     <div class="leftpart">
-        <div class="inner">
-            <img class="smallimg" src="../../../assets/small1.png" alt="">
-            
-            <div class="img">
-                <img class="bookimg" src="../../../assets/name.png" alt="">
-            </div>
+        <div class="imagesside">
+        <div class='imgViewC'>
+            <img src="../../../assets/small1.png" alt='' class='bookImageView' />
+            <img src="../../../assets/small2.png" alt='' class='bookImageView' />
         </div>
+        <div class='largeImgDiv'>
+            <img src="../../../assets/name.png" alt='' class='largeBookImage' />
+        </div> 
+    </div>
         <div class="buttonimg">
             <div (click)="isShow()" *ngIf="!show">
                 <button class="bag" mat-raised-button (click)="cartadd()" (click)="openSnackbar('Book added successfully in cart','Dismiss')" >ADD TO BAG</button>

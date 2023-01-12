@@ -1,11 +1,11 @@
 <div class="outer">
-<div class='booksCard'  *ngFor="let books of bookData | filter: Search | paginate: {itemsPerPage:6, currentPage:page,totalItems:totalLength} ">
+<div class='booksCard'  *ngFor="let books of bookData | filter: Search | paginate: {itemsPerPage:8, currentPage:page,totalItems:totalLength} ">
     <div class='booksImg' (click)="onclick(books)">
       <img src="../../../assets/name.png"  alt='' class='bookImage' />  
     </div>   
     <div class='booksDetails'>
       <p class='bookName'>{{books.bookName}}</p>
-      <p>{{books.author}}</p>
+      <p class="Author">{{books.author}}</p>
       <div>
         <button class='ratingBtn'>4.5*</button>
         <span>({{books.quantity}} )</span>

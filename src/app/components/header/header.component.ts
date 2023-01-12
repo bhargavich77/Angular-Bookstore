@@ -30,4 +30,8 @@ tocart(){
 searchBook(event:any){
   this.data.sendbookdetails(event.target.value)
 }
+logout(){
+  localStorage.clear()
+  this.router.navigateByUrl('/login')
+}
 }

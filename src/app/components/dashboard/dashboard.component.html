@@ -8,9 +8,9 @@
             <mat-form-field class="field" appearance="outline">
                 <mat-label style="color: black; font-size: 12px;">sort by relevance</mat-label>
                 <mat-select class="matselect">
-                    <mat-option  value="one">Price:Low to High</mat-option>
-                    <mat-option  value="two">Price:High to Low</mat-option>
-                    <mat-option  value="third">Newest Arrivals</mat-option>
+                    <mat-option  value="one" (click)=" lowtohigh()">Price:Low to High</mat-option>
+                    <mat-option  value="two" (click)="hightolow()">Price:High to Low</mat-option>
+                    <mat-option  value="third" (click)="newestarrivals() ">Newest Arrivals</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>

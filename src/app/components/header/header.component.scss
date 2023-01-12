@@ -1,5 +1,5 @@
 .headerDiv {
-  /* border: 1px solid red; */
+//  border: 1px solid yellow;
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -9,10 +9,11 @@
 }
 
 .headerMainDiv {
-  /* border: 1px solid red; */
-  width: 85%;
+  //  border: 1px solid orange; 
+  width: 80%;
   height: 100%;
   display: flex;
+  // margin-right:35px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -33,16 +34,18 @@
   flex-direction: row;
   width: 15%;
   color: white;
+  gap:1rem;
 }
 
 .searchDiv {
-  width: 80%;
+  width: 70%;
   height: 45px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: white;
   border-radius: 5px;
+  margin-right: 105px;
   
 }
 .textbox-search {
@@ -54,13 +57,9 @@
 .right-icons{
   display: flex;
   flex-direction: row;
-  // border:1px solid white;
-  // width:100px;
   gap:8rem;
   height:fit-content;
   margin-right: 60px;
-  // margin-left: 500px;
-  // margin: auto;
   margin-top: -13px;
   
 }

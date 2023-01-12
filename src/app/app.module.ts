@@ -91,6 +91,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HomeComponent } from './home/home.component';
 import {AuthguardService} from './authguard.service';
 import {MatMenuModule} from '@angular/material/menu';
+import { Demo1Component } from './components/demo1/demo1.component';
 
 @NgModule({
   declarations: [
@@ -108,6 +109,7 @@ import {MatMenuModule} from '@angular/material/menu';
     FooterComponent,
     FilterPipe,
     HomeComponent,
+    Demo1Component,
     
 
   ],
