@@ -21,11 +21,14 @@ export class DashboardComponent implements OnInit {
   }
   lowtohigh() {
     this.booklist = this.booklist.sort((low: any, high: any) => low.discountPrice - high.discountPrice);
+    console.log(this.booklist)
   }
   hightolow() {
     this.booklist = this.booklist.sort((low: any, high: any) => high.discountPrice - low.discountPrice);
+    console.log(this.booklist)
   }
   newestarrivals() {
     this.booklist.reverse();
+    console.log(this.booklist)
   }
 }

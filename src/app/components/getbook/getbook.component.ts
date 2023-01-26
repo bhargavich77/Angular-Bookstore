@@ -15,6 +15,7 @@ export class GetbookComponent implements OnInit{
   Search='';
   page:number=1;
   totalLength:any;
+  
   // subscription: Subscription;
 constructor(private data:BookService,private dataservice:DataService,private router:Router){}
  
@@ -28,8 +29,10 @@ ngOnInit(): void {
   getallbooks(){
     this.data.getbooks().subscribe((res:any)=>{
       this.bookData=res.result;
+      
       console.log(res)
       console.log(this.bookData)
+      console.log(this.bookData.length)
     })
     
   }
@@ -37,5 +40,23 @@ ngOnInit(): void {
     this.dataservice.sendbookdetails(book)
     this.router.navigateByUrl('/home/Openbook')
   }
-
+  // bookdate() {
+  //   this.bookData.getbooks().subscribe((result: any) => {
+  //     console.log(result);
+  //     this.booklist = result.result;
+  //     console.log(this.booklist);
+  //   })
+  // }
+  lowtohigh() {
+    this.bookData = this.bookData.sort((low: any, high: any) => low.discountPrice - high.discountPrice);
+    console.log(this.bookData)
+  }
+  hightolow() {
+    this.bookData = this.bookData.sort((low: any, high: any) => high.discountPrice - low.discountPrice);
+    console.log(this.bookData)
+  }
+  newestarrivals() {
+    this.bookData.reverse();
+    console.log(this.bookData)
+  }
 }

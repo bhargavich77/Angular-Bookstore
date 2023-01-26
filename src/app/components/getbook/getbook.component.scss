@@ -102,3 +102,51 @@
    font-size: 20px;
     // border: 1px solid red;
   }
+
+  .content {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .top {
+    height: auto;
+    width: auto;
+  }
+  .bookname {
+    width: 100%;
+    display: flex;
+    // margin-right: 150px;
+    // margin-left: 10px;
+    align-items: center;
+    flex-direction: row;
+    // border: 1px solid red;
+    // margin-left: 10px;
+    justify-content: space-between;
+    // gap:15rem;
+  }
+  .sort {
+    font-size: 22px;
+    font-weight: 400;
+    // margin-left:-80px;
+  }
+  .field {
+    font-size: 9px;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 17px;
+    // border: 1px solid red;
+  
+  }
+  
+  .matselect {
+    height: 6px;
+    
+  //   border: 1px solid red;
+  }
+  // .footer{
+  //     margin-top:587px;
+  // }
